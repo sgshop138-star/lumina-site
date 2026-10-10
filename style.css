@@ -18,7 +18,7 @@ a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;curso
 .nav a{position:relative;text-decoration:none;color:#cfcfcf;padding:8px 10px;transition:color .2s}
 .nav a:after{content:"";position:absolute;left:10px;right:10px;bottom:4px;height:1px;background:var(--acc);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
 .nav a:hover,.nav a.on{color:#fff}.nav a:hover:after,.nav a.on:after{transform:scaleX(1);transform-origin:left}
-.hd .btn{margin-left:auto}.nav+.btn{margin-left:8px}
+.hd .btn{margin-left:auto}
 /* bg + hero */
 .bg{position:absolute;inset:0;z-index:-1;background:#05070a url(media/bg-m.webp?v=16) center/cover;overflow:hidden}
 @media(min-width:768px){.bg{background-image:url(media/bg.webp?v=16)}}
@@ -179,3 +179,10 @@ input.bad,textarea.bad{border-color:#e53935!important}
 .sub-h{font-size:clamp(22px,3vw,32px);margin:56px 0 20px}
 @media(min-width:720px){.sec{padding:80px 0}.sh{margin-bottom:28px}.sh h2{font-size:clamp(30px,4.4vw,52px)}}
 @media(min-width:1000px){.faqw{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}.faqw .sh{grid-template-columns:1fr;position:sticky;top:96px}}
+@media(min-width:1000px){.nav+.btn{margin-left:8px}}
+@media(max-width:719px){
+ .svc{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 18px;margin:0 -18px;padding:4px 18px 10px;scrollbar-width:none}
+ .svc::-webkit-scrollbar{display:none}.sv{flex:0 0 80%;scroll-snap-align:start}
+ .steps,.why{grid-template-columns:1fr 1fr;gap:8px}.st,.wy{padding:16px}.st b{font-size:18px;margin-bottom:6px}.st h3,.wy h3{font-size:15px}.st p,.wy p{font-size:13px}
+ .sec{padding:64px 0}.sub-h{margin-top:40px}
+}
